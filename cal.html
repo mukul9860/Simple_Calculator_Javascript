@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>MUkul's Calculator</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body bgcolor="lightgray">
+	<table class="table">
+        <tr>
+			<th colspan="4"><h1 class="h1">Mukul's Calculator</h1></th>
+		</tr>
+		<tr>
+			<td colspan="3"><input type="text" id="res" placeholder="Result" disabled class="txt1"></td>
+			<td><input type="button" value="Clear" class="clearButton" onclick="myClear()"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" class="numButtons" onclick="myValue('1')"></td>
+			<td><input type="button" value="2" class="numButtons" onclick="myValue('2')"></td>
+			<td><input type="button" value="3" class="numButtons" onclick="myValue('3')"></td>
+			<td><input type="button" value="+" class="operatorButtons" onclick="myValue('+')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" class="numButtons" onclick="myValue('4')"></td>
+			<td><input type="button" value="5" class="numButtons" onclick="myValue('5')"></td>
+			<td><input type="button" value="6" class="numButtons" onclick="myValue('6')"></td>
+			<td><input type="button" value="-" class="operatorButtons" onclick="myValue('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" class="numButtons" onclick="myValue('7')"></td>
+			<td><input type="button" value="8" class="numButtons" onclick="myValue('8')"></td>
+			<td><input type="button" value="9" class="numButtons" onclick="myValue('9')"></td>
+			<td><input type="button" value="/" class="operatorButtons" onclick="myValue('/')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="." class="numButtons" onclick="myValue('.')"></td>
+			<td><input type="button" value="0" class="numButtons" onclick="myValue('0')"></td>
+			<td><input type="button" value="=" class="equalButton" onclick="myEqual()"></td>
+			<td><input type="button" value="*" class="operatorButtons" onclick="myValue('*')"></td>
+		</tr>
+	</table>
+    <script src="calculator.js"></script>
+</body>
+</html>
